@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Tasks from './Tasks'
 import AddTask from'./AddTask';
 import FlipMove from "react-flip-move";
-import {Redirect} from 'react-router-dom'
+import {Redirect, Link} from 'react-router-dom'
 
 window.id=0;
 export default class TaskPage extends Component {
@@ -40,6 +40,7 @@ export default class TaskPage extends Component {
         }
         return (
             <div className="container">
+            <Link to="/logout">logout</Link>
              <div className="App">
                <h1 className="center blue-text">Tasks To Do!!!
               </h1>
